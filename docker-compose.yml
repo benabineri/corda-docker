@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  networkmap:
+    image: corda
+    volumes:
+      - ./networkmap:/mnt/vol
+
+  notary:
+    image: corda
+    volumes:
+      - ./notary:/mnt/vol
+
+  bank-a:
+    image: corda
+    volumes:
+      - ./bank-a:/mnt/vol

@@ -9,7 +9,7 @@ RUN apt-get -qq update && apt-get -y install zulu-8
 
 # Add Corda
 RUN mkdir /opt/corda
-ADD http://jcenter.bintray.com/net/corda/corda/1.0.0/corda-1.0.0.jar /opt/corda/corda.jar
+ADD http://jcenter.bintray.com/net/corda/corda/2.0.0/corda-2.0.0.jar /opt/corda/corda.jar
 
 VOLUME /mnt/vol
 RUN ln -s /mnt/vol/node.conf /opt/corda/node.conf
